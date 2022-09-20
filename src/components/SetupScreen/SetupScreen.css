@@ -1,0 +1,146 @@
+.heading {
+	/*Overwriting style.css*/
+	margin-bottom: 35px;
+}
+
+.form-group {
+	margin: 8px 0px;
+}
+
+.form-group > p {
+	font-size: 1.6em;
+	margin: 0px;
+	margin-bottom: 15px;
+	color: rgba(255, 255, 255, 0.9);
+	width: 103px;
+	background: black;
+	padding: 0px 4px;
+	border-radius: 4px;
+	text-align: center;
+}
+
+label {
+	font-size: 1.6em;
+	color: rgba(255, 255, 255, 0.7);
+	margin-right: 15px;
+}
+
+input {
+	font-size: 16px;
+	padding: 4px;
+	border-radius: 5px;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.9);
+	margin-bottom: 10px;
+}
+
+input#checkbox {
+	width: 16px;
+	height: 16px;
+}
+
+input#image-url {
+	width: 360px;
+}
+
+button {
+	margin: 15px;
+	padding: 5px 8px;
+	border-radius: 5px;
+	/*border-color: rgba(0, 0, 0, 1);
+	border-style: solid;*/
+	font-weight: normal;
+	font-size: 18px;
+	border-width: 4px;
+}
+
+#display-container button {
+	border-style: outset;
+	border-color: grey;
+}
+
+#entry-fields {
+	
+}
+
+#btn-delete-cards {
+	color: red;
+	margin: 15px;
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+
+.setup-btn {
+	color: white;
+	background: black;
+	font-size: 40px;
+	font-weight: bold;
+	margin: 40px;
+	padding: 5px 10px;
+	border-width: 3px;
+	border-radius: 5px;
+	border-color: rgba(20, 20, 20, 1);
+}
+
+.demo-btn {
+	color: white;
+	background: hsla(225, 100%, 20%, 0.9);
+	font-size: 24px;
+	font-weight: normal;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	padding: 5px 10px;
+	border-width: 5px;
+	border-radius: 5px;
+	border-color: hsla(225, 100%, 20%, 1);
+}
+
+#card-div {
+	display: flex;
+	background: black;
+	border-color: hsl(225, 100%, 15%);
+	padding: 2px;
+	border-width: 8px;
+	border-radius: 8px;
+	border-style: solid;
+	margin: 10px 10px;
+	max-width: 750px;
+}
+
+#card-div textarea {
+	cursor: default;
+}
+
+#num {
+	color: white;
+	font-size: 1.5em;
+	margin: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.textarea {
+	margin: 5px;
+	resize: none;
+	font-size: 1.3em;
+	padding: 8px;
+	border-radius: 5px;
+	border-color: rgba(0, 0, 0, 0.9);
+	border-width: 3px;
+}
+
+#ta-question, #ta-answer {
+	margin: 5px;
+	resize: none;
+	font-size: 1.2em;
+	padding: 8px;
+	border-radius: 5px;
+	border-color: rgba(0, 0, 0, 0.9);
+	border-width: 3px;
+}
+
+.arrow-btn {
+	margin: 5px;
+	padding: 2px 4px;
+}

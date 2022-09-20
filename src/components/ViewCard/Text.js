@@ -4,7 +4,8 @@ export default class Text {
 		this.backdrop = backdrop;
 		this.text = text;
 
-		this.font = new FontFace('OpenSans', "url(./fonts/OpenSans-Bold.ttf)");
+		this.font = new FontFace('OpenSans', "url(fonts/OpenSans-Bold.ttf)");
+
 		this.fontSize = fontSize;
 		this.x = x;
 		this.y = y;
@@ -12,9 +13,11 @@ export default class Text {
 		this.offset = 0;
 
 		this.lineSpace = 30;
+
+		this.isLoaded = false;
 	}
 
-	draw() {
+	draw(allTextIsLoad) {
 		this.context.clearRect(this.x, this.y, 400, 50);
 		this.backdrop.draw();
 
@@ -22,16 +25,20 @@ export default class Text {
 
 		this.font.load().then(function() {
 			document.fonts.add(that.font);
+			that.isLoaded = true;
 
-			that.context.fillStyle = "black";
-			that.context.font = `${that.fontSize} ${that.font.family}`;
+			if (allTextIsLoad) {
+				that.context.fillStyle = "black";
+				that.context.font = `${that.fontSize} ${that.font.family}`;
 
-			that.context.fillText(that.text, that.x, that.y);
+				that.context.fillText(that.text, that.x, that.y);	
+			}
+			
 		});	
 	}
 
-	update() {
-		this.draw();
+	update(allTextIsLoad) {
+		this.draw(allTextIsLoad);
 		this.x = (this.backdrop.x + 25) + this.offset;
 	}
 }
